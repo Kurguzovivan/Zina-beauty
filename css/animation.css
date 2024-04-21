@@ -1,0 +1,42 @@
+/* Ручная анимация кнопки*/
+@keyframes slide {
+    0% {
+      transform: translateX(0px);
+      background-color: rgb(151, 154, 165, 0.5);
+    }
+    5% {
+      transform: translateX(0px);
+      
+      background-color: rgb(151, 154, 165, 0.5);
+    }
+    10% {
+      transform: translateX(0px);
+  
+      background-color: rgb(151, 154, 165, 0.5);
+    }
+    15% {
+      transform: translateY(0px);
+      background-color: rgb(151, 154, 165, 0.5);
+    }
+    30% {
+      transform: translateX(-1px);
+      
+      background-color: rgb(128, 131, 141, 0.5);
+    }
+    50% {
+      transform: translateX(10px);
+      background-color: rgb(128, 131, 141, 0.5);
+    }
+    60% {
+      transform: translateX(0px);
+      background-color: rgb(151, 154, 165, 0.5);
+    }
+    70% {
+      transform: translateX(10px);
+      background-color: rgb(128, 131, 141, 0.5);
+    }
+    80% {
+      transform: translateX(0px);
+      background-color: rgb(151, 154, 165, 0.5);
+    }
+  }

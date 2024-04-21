@@ -1,0 +1,743 @@
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+}
+/* Styles header */
+
+.main-header {
+  width: 100%;
+  height: 107px;
+  background-color: rgba(13, 11, 11, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  transform: rotate(-160deg);
+  background-color: aliceblue;
+  margin-left: 50px;
+}
+.menu {
+  margin-right: 20px;
+}
+a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+@media (max-width: 650px) {
+  .main-header {
+    width: 100%;
+    height: 70px;
+  }
+  .main-header img {
+    width: 50px;
+    height: 50px;
+  }
+
+  a {
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 14px;
+    padding-right: 2px;
+  }
+}
+
+/* styles main-page */
+.main-body {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+.main-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../foto/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.block-h1 {
+  width: 500px;
+  height: 250px;
+  border-radius: 25px;
+  background-color: rgba(217, 217, 217, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Zina-Kurguzova {
+  font-size: 96px;
+  font-weight: 700;
+  font-family: charm;
+  line-height: 10%;
+  color: #fff;
+  line-height: 106%;
+  text-align: center;
+}
+
+.block-h2 {
+  width: 500px;
+  height: 250px;
+  background-color: rgba(217, 217, 217, 0.1);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Master {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  font-family: charm;
+  text-align: center;
+  padding-left: 40px;
+}
+
+/* Кнопка 'Записаться' */
+.button {
+  position: fixed;
+  top: 86%;
+  left: 81.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 160px;
+  background-color: rgb(151, 154, 165, 0.6);
+  border-radius: 30px;
+  animation: slide 2500ms ease-in-out infinite;
+}
+
+.sign {
+  font-size: 21px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  margin-left: 30px;
+}
+@media (max-width: 900px) {
+  .block-h1 {
+    width: 300px;
+    height: 140px;
+  }
+  .Zina-Kurguzova {
+    font-size: 60px;
+    font-weight: 600;
+  }
+  .block-h2 {
+    width: 300px;
+    height: 140px;
+  }
+  .Master {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+  .button {
+    position: fixed;
+    top: 72%;
+    left: 72%;
+    height: 50px;
+    width: 120px;
+  }
+  .sign {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 500px) {
+  .main-page {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .block-h1 {
+    width: 280px;
+    height: 120px;
+    margin-top: 60px;
+  }
+  .Zina-Kurguzova {
+    font-size: 39px;
+    font-weight: 600;
+  }
+  .block-h2 {
+    width: 280px;
+    height: 120px;
+    margin-bottom: 60px;
+  }
+  .Master {
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: 0px;
+    margin-right: 16px;
+    line-height: 17px;
+  }
+  .button {
+    position: fixed;
+    top: 60%;
+    left: 55%;
+    height: 45px;
+    width: 105px;
+  }
+  .sign {
+    font-size: 13px;
+    padding-right: 27px;
+  }
+}
+
+/* Мои услуги */
+
+.main-my-servises {
+  background-color: black;
+  margin-bottom: 0px;
+  width: 100%;
+  padding: 10px 0px;
+}
+h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 64px;
+  color: #fff;
+  padding: 40px 0px;
+}
+#point {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 25px;
+  font-weight: 600;
+  font-size: 36px;
+  color: #fff;
+}
+.service {
+  width: 400px;
+  height: 200px;
+  background-color: black;
+}
+#point p {
+  font-weight: 600;
+  font-size: 33px;
+  transition: 0.5s;
+}
+
+#point p:hover {
+  font-weight: 800;
+  font-size: 34px;
+}
+
+.foto {
+  width: 840px;
+  height: 160px;
+  background-color: black;
+  display: flex;
+}
+
+.fotoindex {
+  height: 100%;
+  width: 33.33%;
+  border: 3px black solid;
+}
+.fotoindex img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+}
+.fotoindex img:hover {
+  position: relative;
+  width: 130%;
+  height: 130%;
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-weight: 500;
+    font-size: 50px;
+  }
+  .service {
+    width: 300px;
+    height: 150px;
+  }
+  #point p {
+    font-weight: 500;
+    font-size: 23px;
+  }
+  #point p:hover {
+    font-weight: 600;
+    font-size: 23px;
+  }
+
+  .foto {
+    width: 700px;
+    height: 140px;
+  }
+  .fotoindex img:hover {
+    position: relative;
+    width: 130%;
+    height: 130%;
+    z-index: 1;
+  }
+}
+@media (max-width: 650px) {
+  h1 {
+    font-weight: 500;
+    font-size: 40px;
+  }
+  .service {
+    width: 200px;
+    height: 100px;
+  }
+  #point p {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  #point p:hover {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .foto {
+    width: 450px;
+    height: 100px;
+  }
+}
+@media (max-width: 510px) {
+  h1 {
+    font-weight: 500;
+    font-size: 35px;
+    padding: 0;
+  }
+  .service {
+    width: 150px;
+    height: 80px;
+  }
+  #point p {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  #point p:hover {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .foto {
+    width: 350px;
+    height: 50px;
+  }
+}
+/* О себе */
+.about-me {
+  width: 100%;
+  height: 600px;
+  background-image: url("../foto/About-me.jpg");
+  background-size: cover;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.about-me-box{
+  background-color: hsl(0, 0%, 0%,0.5);
+  border-radius: 20px;
+padding-top: 40px;
+}
+.about-me-text {
+  width: 90%;
+  height: 100%;
+
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  font-size: 29px;
+  font-weight: 600;
+}
+.about-me-text p {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .about-me-text {
+    font-size: 27px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 1150px) {
+  .about-me-text {
+    font-size: 26px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 980px) {
+  .about-me-text {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 750px) {
+  .about-me-text {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 600px) {
+  .about-me-text {
+    font-size: 17px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 480px) {
+  .about-me-text {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 391px) {
+  .about-me-text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+/* Контакты */
+.contacts {
+  width: 100%;
+  margin: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.adress {
+  width: 400px;
+  height: 350px;
+  margin: 0px 30px;
+  background-color: rgb(253, 251, 251);
+  box-shadow: 7px 7px 7px 7px rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.map {
+  width: 400px;
+  height: 350px;
+  margin: 0px 30px;
+  box-shadow: 7px 7px 7px 7px rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.map img:hover {
+  background-color: #dec9c9;
+  box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+.map img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.adress {
+  transition: 0.5s;
+}
+.adress:hover {
+  background-color: #f8f2f2;
+  box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+.adress p {
+  color: black;
+  font-size: 30px;
+  padding: 15px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+.adress a:hover {
+  font-weight: 700;
+  color: red;
+}
+span {
+  font-size: 32px;
+  font-weight: 800;
+  color: black;
+}
+.shangal {
+  font-size: 32px;
+  font-weight: 500;
+  color: black;
+}
+.MaryMe {
+  font-size: 35px;
+  font-weight: 800;
+  color: rgb(45, 44, 44);
+  letter-spacing: 0px;
+}
+h2 {
+  padding-left: 18px;
+  margin-bottom: 5px;
+}
+.tel a {
+  color: black;
+  font-weight: 800;
+  margin-left: 20px;
+}
+.zina-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zina-contacts a:hover {
+  color: red;
+}
+.zina-contacts img:hover {
+  border: 2px rgb(17, 208, 17) solid;
+  border-radius: 7px;
+}
+.tel {
+  background-color: rgb(246, 244, 241);
+  border-radius: 8px;
+}
+.tel h2 {
+  color: black;
+  font-size: 20px;
+}
+.jobtel {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: -10px;
+  margin-left: 17px;
+}
+
+@media (max-width: 900px) {
+  .adress {
+    width: 350px;
+    height: 280px;
+    margin: 0px 25px;
+  }
+  .map {
+    width: 350px;
+    height: 280px;
+  }
+  .adress p {
+    font-size: 26px;
+    padding: 15px;
+    margin-top: -8px;
+  }
+  span {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .shangal {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .MaryMe {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0px;
+  }
+  .tel h2 {
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 18px;
+    margin-bottom: 5px;
+  }
+  .tel a {
+    font-weight: 800;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  .tel img {
+    width: 26px;
+    height: 26px;
+  }
+  .jobtel {
+    font-weight: 600;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .adress {
+    width: 280px;
+    height: 220px;
+  }
+  .map {
+    width: 280px;
+    height: 220px;
+  }
+  .adress p {
+    font-size: 19px;
+    letter-spacing: 0px;
+    margin-top: -7px;
+    margin-bottom: 0px;
+  }
+  span {
+    font-size: 19px;
+    font-weight: 800;
+  }
+  .shangal {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .MaryMe {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0px;
+  }
+  .tel h2 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .tel a {
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .tel img {
+    width: 15px;
+    height: 15px;
+  }
+  .jobtel {
+    font-weight: 600;
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .adress {
+    width: 310px;
+    height: 250px;
+
+    margin-top: -70px;
+    margin: -60px 20px 20px 20px;
+  }
+  .map {
+    width: 310px;
+    height: 250px;
+    margin: 20px 20px -60px 20px;
+  }
+  .adress p {
+    font-size: 26px;
+    padding: 15px;
+    margin-top: -8px;
+  }
+  span {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .shangal {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .MaryMe {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0px;
+  }
+  .tel h2 {
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 18px;
+    margin-bottom: 5px;
+  }
+  .tel a {
+    font-weight: 800;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  .tel img {
+    width: 26px;
+    height: 26px;
+  }
+  .jobtel {
+    font-weight: 600;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 107px;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Copyright {
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Kurguzov {
+  font-size: 25px;
+  font-style: charm;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.Copyright img {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+@media (max-width: 700px) {
+  .footer {
+    height: 80px;
+  }
+  .Copyright {
+    font-size: 21px;
+  }
+  .Kurguzov {
+    font-size: 21px;
+    font-style: charm;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  @media (max-width: 450px) {
+    .footer {
+      height: 60px;
+    }
+    .Copyright {
+      font-size: 15px;
+    }
+    .Kurguzov {
+      font-size: 15px;
+      font-style: charm;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+  }
+}
